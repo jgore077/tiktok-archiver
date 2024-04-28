@@ -1,0 +1,13 @@
+certifi
+charset-normalizer
+colorama
+contextlib2
+docopt
+idna
+internet-archive-uploader
+jsonpatch
+jsonpointer
+requests
+schema
+tqdm
+urllib3

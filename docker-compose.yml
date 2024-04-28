@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  tiktokarchiver:
+    image: tiktokarchiver
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - IA_PASSWORD=${IA_PASSWORD}
+      - IA_USERNAME=${IA_USERNAME}
+      - USER=${USER}
+      - IDENTIFIER=${IDENTIFIER}
+      - DESCRIPTION=${DESCRIPTION}
+      - SUBJECT=${SUBJECT}
+      - CREATOR=${CREATOR}
