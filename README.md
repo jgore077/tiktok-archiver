@@ -12,12 +12,12 @@ Unfortunately due to the design of my TikTok downloader you will need to pass a 
 
 To get these cookies clone https://github.com/jgore077/tiktok-downloader and follow its instructions. Once you have the cookies, run this command in the the `tiktok-downloader` directory.
 ```
-docker cp cookies.json <Container name>:app
+docker cp cookies.json <container name>:app
 ```
 Once you have copied these cookies the container will run as intended.
 
 ## Configuring the .env file (docker compose)
-
+If you want to run the container with `docker compose up` you will still need to copy the `cookies.json` but you will additionally need a `.env` file.
 The `IDENTIFIER` must be 100% unique or else it will cause conflicts with the Internet Archive. You can perform and advanced search with your `IDENTIFIER` at [https://archive.org/advancedsearch.php](https://archive.org/advancedsearch.php) to verify it is not in use. If you have any questions about these variables open an issue and I will explain it.
 
 ```
